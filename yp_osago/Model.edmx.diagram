@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c09989e830cb4be0a094aa9ad64d9183" Name="Diagram1">
+        <EntityTypeShape EntityType="yp_osagoModel.car_brands" Width="1.5" PointX="5.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="yp_osagoModel.car_categories" Width="1.5" PointX="5.25" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="yp_osagoModel.cars" Width="1.5" PointX="7.5" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="yp_osagoModel.drivers" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="yp_osagoModel.policies" Width="1.5" PointX="9.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="yp_osagoModel.regions" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="yp_osagoModel.roles" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="yp_osagoModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="yp_osagoModel.users" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="yp_osagoModel.FK__cars__brand_id__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="yp_osagoModel.FK__cars__category_i__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="yp_osagoModel.FK__cars__driver_id__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="yp_osagoModel.FK__policies__car_id__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="yp_osagoModel.FK__drivers__region___47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="yp_osagoModel.FK__drivers__user_id__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="yp_osagoModel.FK__policies__driver__5165187F" ManuallyRouted="false" />
+        <AssociationConnector Association="yp_osagoModel.FK__users__role_id__3B75D760" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

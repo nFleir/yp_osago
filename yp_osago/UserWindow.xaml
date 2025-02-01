@@ -1,0 +1,42 @@
+﻿<Window x:Class="yp_osago.UserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:yp_osago"
+        mc:Ignorable="d"
+                Title="Труш Страхование" Height="800" Width="1280" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Closing="Window_Closing">
+    <Grid Background="#F4F4F4">
+        <Border BorderThickness="1" BorderBrush="Gray" Padding="20" Background="White" CornerRadius="10" 
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Vertical" Width="750" VerticalAlignment="Center" HorizontalAlignment="Center">
+
+
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 0 15">
+                    <Image Source="Logo.png" Width="80" Margin="0 10 0 0"/>
+                    <Label Name="Header" Content="ОСАГО" VerticalAlignment="Center" FontSize="22" FontWeight="Bold"/>
+                </StackPanel>
+
+
+                <TextBlock HorizontalAlignment="Center" FontSize="16" Foreground="Black" Margin="0 0 0 30">
+                <Run Text="Оформите полис быстро и удобно."/>
+                </TextBlock>
+
+
+                <StackPanel Orientation="Horizontal" Width="330" HorizontalAlignment="Center">
+                    <Button x:Name="bidClick" Content="Оформить" Click="cpClick_Click"
+                        Background="Wheat" Foreground="Black" FontSize="16"
+                        Padding="10" Height="40" Width="150"  Margin="0 0 10 0"/>
+
+                    <Button x:Name="BtnCheck" Content="Статус полиса" Click="BtnCheck_Click"
+                        Background="Wheat" Foreground="Black" FontSize="16"
+                        Padding="10" Height="40" Width="150" />
+                </StackPanel>
+
+            </StackPanel>
+        </Border>
+
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
+    </Grid>
+
+</Window>
