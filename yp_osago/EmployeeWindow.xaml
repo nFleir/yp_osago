@@ -11,7 +11,7 @@
             HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Vertical" Width="600">
                 <!-- Логотип -->
-                <Image Source="References/AppIcons/Images/Logo.png" Width="80" Margin="0 0 0 10"/>
+                <Image Source="Logo.png" Width="80" Margin="0 0 0 10"/>
 
                 <!-- Заголовок -->
                 <TextBlock Name="Header" Text="Панель страхового агента" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" Margin="0 0 0 20"/>
@@ -22,7 +22,7 @@
                 <Button x:Name="bidClick" Content="Панель управления" Width="200" Height="40" Margin="0 0 0 20" 
                     Style="{StaticResource Buttons}" FontSize="16" Background="Wheat" Foreground="Black" BorderBrush="Black" 
                     BorderThickness="1" Click="bidClick_Click">
-                    <Button.Triggers>
+                    <!--<Button.Triggers>
                         <EventTrigger RoutedEvent="MouseEnter">
                             <BeginStoryboard>
                                 <Storyboard>
@@ -31,13 +31,14 @@
                                 </Storyboard>
                             </BeginStoryboard>
                         </EventTrigger>
-                    </Button.Triggers>
+                    </Button.Triggers>-->
                 </Button>
 
-                <!-- Основной фрейм для навигации -->
-                <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Margin="0, 20, 0, 0"/>
+                
             </StackPanel>
         </Border>
+        <!-- Основной фрейм для навигации -->
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"/>
     </Grid>
 
 </Window>
